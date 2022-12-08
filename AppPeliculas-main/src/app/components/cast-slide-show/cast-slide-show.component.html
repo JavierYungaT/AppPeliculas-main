@@ -1,0 +1,12 @@
+<div class="swiper">
+    <h3 class="mt-1">Actores</h3>
+    <br>
+    <div class="swiper-wrapper">
+
+        <div *ngFor="let actor of cast" class="swiper-slide text-white text-center">
+            <img [src]="actor.profile_path | poster" [alt]="actor.name" class="rounded-4 img-fluid cursor"/>
+            {{actor.name}}
+        </div>
+
+    </div>
+</div>

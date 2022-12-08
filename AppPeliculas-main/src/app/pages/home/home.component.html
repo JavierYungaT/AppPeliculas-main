@@ -1,0 +1,46 @@
+<div class=" colum1 ">
+    
+    <h1 class="title"><img src="../../../assets/images/title.png"></h1>
+    <div class="menu">
+        <div class=" boton">
+            <button class="texto espacio"> <i class="fa fa-home" aria-hidden="true"></i>
+                  Home </button>
+
+        </div>
+        <div class=" boton">
+
+            <button class=" texto espacio">  <i class="fa fa-video-camera" aria-hidden="true"></i> Movies </button>
+            
+        </div>
+        <div class="boton ">
+
+            <button class="texto espacio"> <i class="fa fa-television" aria-hidden="true"></i> Tv Series </button>
+            
+        </div>
+        <div class="boton ">
+
+            <button class="texto espacio"><i class="fa fa-calendar" aria-hidden="true"></i> Upcoming</button>
+            
+        </div>
+        
+
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            
+
+        </div>
+        <div class="col">
+            <h1 class="mt-5">Movies</h1>
+            <app-peliculas-poster-grid *ngIf="movies.length > 0" [movies]="movies"></app-peliculas-poster-grid>
+        </div>
+
+
+    </div>
+
+
+</div>
